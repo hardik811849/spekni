@@ -1,0 +1,99 @@
+.container {
+  padding: 3rem 1rem 0 2.5rem;
+  max-width: 1100px;
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  max-width: 650px;
+  margin-bottom: 1.5rem;
+}
+
+/* Endorsements */
+.endorsements {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  gap: 2rem;
+}
+
+.endorsements,
+.recommendations {
+  margin: 4rem 0;
+}
+
+.endorsements .title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.endorsements .endorsementCard {
+  border: var(--borderPrimary);
+  border-radius: 5px;
+  max-width: 500px;
+  height: auto;
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+}
+
+.endorseImage,
+.endorseName {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+.endorseName {
+  font-size: 0.8rem;
+}
+
+.endorseImage {
+  margin: 1rem 0;
+}
+.endorseImage img {
+  border-radius: 50%;
+}
+
+/* Recommendation */
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: var(--borderPrimary);
+  max-width: 700px;
+}
+
+.recommendContainer {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.recommendCard {
+  border: var(--borderPrimary);
+  padding: 1.5rem;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 3rem 1.5rem 0;
+  }
+
+  .endorsements {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

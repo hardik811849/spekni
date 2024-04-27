@@ -1,0 +1,167 @@
+.footer {
+  min-height: 320px;
+}
+
+.line {
+  width: 100%;
+  border-bottom: var(--borderPrimary);
+}
+
+.footerHead,
+.footerBottom {
+  max-width: 1230px;
+  padding: 1.8rem 1.5rem;
+}
+
+.footerHead {
+  display: flex;
+  align-items: center;
+  margin: 3.5rem auto 1.5rem;
+  justify-content: space-between;
+}
+
+.footerLinks {
+  display: flex;
+  align-items: center;
+}
+
+.footerLinks .footerLogo {
+  display: flex;
+  align-items: center;
+}
+
+.footerLinks a {
+  margin-right: 2.2rem;
+}
+
+.footerLinks a:hover {
+  color: var(--primaryColor);
+}
+
+.footerIcons {
+  display: flex;
+  align-items: center;
+}
+
+.footerIcons a {
+  margin-left: 1.2rem;
+}
+
+.footerBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem auto;
+}
+
+.attribution > span {
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.attribution div {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.attribution div a {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  font-size: 1.3rem;
+}
+
+.attribution div a:nth-child(2) {
+  margin-left: 1rem;
+}
+
+.tc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 0.7rem;
+}
+
+@media (max-width: 800px) {
+  .footerHead,
+  .footerBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footerBottom {
+    text-align: center;
+  }
+
+  .footerBottom p {
+    margin-top: 1rem;
+  }
+
+  .footerLinks {
+    margin-bottom: 2rem;
+  }
+
+  .footerLinks a {
+    margin-right: 2rem;
+  }
+
+  .attribution div {
+    margin: 0.7em 0;
+  }
+
+  .tc {
+    align-items: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .footerHead {
+    align-items: flex-start;
+  }
+
+  .footerIcons a {
+    margin: 0 1.2rem 0 0;
+  }
+
+  .footerLinks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+  }
+
+  .footerBottom {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .footerLinks {
+    grid-template-columns: 1fr;
+  }
+
+  .footerBottom {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .attribution div {
+    row-gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .attribution div a:nth-child(2) {
+    margin-left: initial;
+  }
+
+  .tc {
+    align-items: flex-start;
+  }
+
+  .tc small {
+    display: none;
+  }
+}
